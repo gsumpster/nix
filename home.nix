@@ -49,7 +49,7 @@
           dbaeumer.vscode-eslint
           esbenp.prettier-vscode
           eamodio.gitlens
-          GitHub.vscode-pull-request-github
+          github.vscode-pull-request-github
         ];
       };
     };
