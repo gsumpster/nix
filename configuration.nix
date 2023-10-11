@@ -33,6 +33,7 @@ in {
       "spotify"
       "docker"
       "google-chrome"
+      "notion"
     ];
     masApps = {
       "1Password for Safari" = 1569813296;
