@@ -3,6 +3,8 @@
 in {
   system.stateVersion = 4;
 
+  nixpkgs.config.allowUnfree = true;
+
   environment = {
     shells = with pkgs; [ bash zsh ];
     loginShell = pkgs.zsh;

@@ -20,12 +20,6 @@
     darwinConfigurations."george" = nix-darwin.lib.darwinSystem {
       system = "aarch64-darwin";
 
-      pkgs = import nixpkgs {
-        config = {
-          allowUnfree = true;
-        };
-      };
-
       modules = [
         ./configuration.nix
 

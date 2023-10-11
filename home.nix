@@ -14,7 +14,6 @@
     awscli
     cachix
     zoom-us
-    (import (fetchTarball https://install.devenv.sh/latest)).default
   ];
 
   programs = {
@@ -43,6 +42,7 @@
       };
       vscode = {
         enable = true;
+        mutableExtensionsDir = false;
         extensions = with pkgs.vscode-extensions; [
           jnoortheen.nix-ide
           ms-kubernetes-tools.vscode-kubernetes-tools
