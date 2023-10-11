@@ -29,12 +29,19 @@ in {
       "1password-cli"
       "slack"
       "tailscale"
+      "rectangle"
     ];
     masApps = {
       "1Password for Safari" = 1569813296;
       "Fantastical" = 975937182;
+      "Omnifocus 3" = 1346203938; 
     };
   };
+
+  fonts.fontDir.enable = true;
+  fonts.fonts = with pkgs; [
+     (nerdfonts.override { fonts = [ "RobotoMono" ]; })
+   ];
 
   nix = {
     settings = {
