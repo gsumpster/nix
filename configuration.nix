@@ -35,11 +35,14 @@ in {
       "google-chrome"
       "notion"
       "tableplus"
+      "figma"
+      "skype"
     ];
     masApps = {
       "1Password for Safari" = 1569813296;
       "Fantastical" = 975937182;
-      "Omnifocus 3" = 1346203938; 
+      "Omnifocus 3" = 1346203938;
+      "Handmirror" = 1502839586;
     };
   };
 
@@ -50,7 +53,7 @@ in {
 
   nix = {
     settings = {
-      bash-prompt-prefix = "(nix:$name)\040";
+      bash-prompt-prefix = "(nix:$name)";
       build-users-group = "nixbld";
       experimental-features = [
         "auto-allocate-uids"

@@ -52,12 +52,22 @@
           esbenp.prettier-vscode
           eamodio.gitlens
           github.vscode-pull-request-github
+          rust-lang.rust-analyzer
+          serayuzgur.crates
+          graphql.vscode-graphql-syntax
+          graphql.vscode-graphql
         ]++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {
             name = "binary-plist";
             publisher = "dnicolson";
             version = "0.11.3";
             sha256 = "sha256-/Wwoy1EOfTx2QimblmnnnY2xWynofua/v1mR/9oZMAw=";
+          }
+          {
+            name = "vsliveshare";
+            publisher = "MS-vsliveshare";
+            version = "1.0.5883";
+            sha256 = "sha256-BNxLINcbat2F4PHCrKHKIuMpXW1q9aP2SDb0oIv48v0=";
           }
         ];
       };
