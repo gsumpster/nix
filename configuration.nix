@@ -37,6 +37,7 @@ in {
       "tableplus"
       "figma"
       "skype"
+      "linear-linear"
     ];
     masApps = {
       "1Password for Safari" = 1569813296;
