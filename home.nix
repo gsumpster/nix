@@ -56,6 +56,8 @@
           serayuzgur.crates
           graphql.vscode-graphql-syntax
           graphql.vscode-graphql
+          orta.vscode-jest
+          firsttris.vscode-jest-runner
         ]++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {
             name = "binary-plist";
