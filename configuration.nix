@@ -24,6 +24,10 @@ in {
       cleanup = "zap";
       upgrade = true;
     };
+    # brews = [
+    #   "terraform"
+    #   "terragrunt"
+    # ];
     casks = [
       "1password"
       "1password-cli"
@@ -44,7 +48,7 @@ in {
     masApps = {
       "1Password for Safari" = 1569813296;
       "Fantastical" = 975937182;
-      "Omnifocus 3" = 1346203938;
+      "Omnifocus 4" = 1542143627;
       "Handmirror" = 1502839586;
     };
   };
