@@ -15,8 +15,6 @@
     awscli
     cachix
     zoom-us
-    terraform
-    terragrunt
   ];
 
   programs = {

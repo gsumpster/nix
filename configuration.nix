@@ -24,10 +24,11 @@ in {
       cleanup = "zap";
       upgrade = true;
     };
-    # brews = [
-    #   "terraform"
-    #   "terragrunt"
-    # ];
+    brews = [
+      "terraform"
+      "terragrunt"
+      "kubergrunt"
+    ];
     casks = [
       "1password"
       "1password-cli"
