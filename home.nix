@@ -65,6 +65,18 @@
             sha256 = "sha256-/Wwoy1EOfTx2QimblmnnnY2xWynofua/v1mR/9oZMAw=";
           }
           {
+            name = "terraform";
+            publisher = "Hashicorp";
+            version = "2.29.5";
+            sha256 = "sha256-r3Ay7DKfe0AcgrEQnEPBJSCh9reCFoeT30B1SMl76mk=";
+          }
+          {
+            name = "HCL";
+            publisher = "Hashicorp";
+            version = "0.3.2";
+            sha256 = "sha256-cxF3knYY29PvT3rkRS8SGxMn9vzt56wwBXpk2PqO0mo=";
+          }
+          {
             name = "vsliveshare";
             publisher = "MS-vsliveshare";
             version = "1.0.5883";
