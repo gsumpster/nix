@@ -89,6 +89,12 @@
             sha256 = "sha256-xwchSdDVX6F6Nw23mQ/LRc7uXPtm3FA1ZWlm9PXWzuw=";
           }
           {
+            name = "copilot";
+            publisher = "GitHub";
+            version = "1.180.0";
+            sha256 = "sha256-TxqQzJfynmQkS86jnO6TV8MpRIwlkIPen6MtApT8/Uc=";
+          }
+          {
             name = "vscode-jest";
             publisher = "orta";
             version = "5.2.3";
