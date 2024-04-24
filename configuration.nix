@@ -28,6 +28,7 @@ in {
       "terraform"
       "terragrunt"
       "kubergrunt"
+      "ory-hydra"
     ];
     casks = [
       "1password"
