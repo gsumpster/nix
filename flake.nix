@@ -3,27 +3,32 @@
 
   inputs = {
     # nixpkgs
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-23.05-darwin";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-23.11-darwin";
 
     # Nix Darwin
     nix-darwin.url = "github:LnL7/nix-darwin/master";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
 
     # Home Manager 
-    home-manager.url = "github:nix-community/home-manager/release-23.05";
+    home-manager.url = "github:nix-community/home-manager/release-23.11";
 
     # Homebrew
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
+
+    # import the 1Password Shell Plugins Flake
+    _1password-shell-plugins.url = "github:1Password/shell-plugins";
   };
 
-  outputs = inputs@{ self, nix-homebrew, nix-darwin, nixpkgs, home-manager }: {
-    darwinConfigurations."george" = nix-darwin.lib.darwinSystem {
+  outputs = inputs: {
+    darwinConfigurations."georges-MacBook-Pro" = inputs.nix-darwin.lib.darwinSystem {
       system = "aarch64-darwin";
 
+      specialArgs = { inherit inputs; };
+      
       modules = [
         ./configuration.nix
 
-        nix-homebrew.darwinModules.nix-homebrew
+        inputs.nix-homebrew.darwinModules.nix-homebrew
         {
           nix-homebrew = {
             # Install Homebrew under the default prefix
@@ -37,7 +42,7 @@
           };
         }
 
-        home-manager.darwinModules.home-manager
+        inputs.home-manager.darwinModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;

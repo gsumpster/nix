@@ -1,7 +1,9 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, inputs, ... }:
+
+
 
 {
-  home.stateVersion = "23.05";
+  home.stateVersion = "23.11";
 
   home.packages = with pkgs; [
     coreutils
@@ -17,12 +19,20 @@
     zoom-us
   ];
 
+  # imports = [inputs._1password-shell-plugins.hmModules.default];
   programs = {
+      # _1password-shell-plugins = {
+      #   enable = true;
+      #   plugins = with pkgs; [ gh awscli2 cachix ];
+      # };
       zsh = {
         enable = true;
         enableCompletion = true;
 
-        initExtra = "source /Users/george/.config/op/plugins.sh\n";
+        initExtra = ''
+          source /Users/george/.config/op/plugins.sh
+          export PATH="/opt/homebrew/bin:$PATH"
+        '';
 
         oh-my-zsh = {
           enable = true;

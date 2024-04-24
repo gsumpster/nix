@@ -1,4 +1,4 @@
-{ pkgs, ... }: let
+{ pkgs, lib, inputs, ... }: let
   user = "george";
 in {
   system.stateVersion = 4;
