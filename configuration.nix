@@ -6,7 +6,7 @@ in {
   nixpkgs.config.allowUnfree = true;
 
   environment = {
-    shells = with pkgs; [ bash zsh ];
+    shells = with pkgs; [ zsh ];
     loginShell = pkgs.zsh;
     pathsToLink = [
       "/Applications"

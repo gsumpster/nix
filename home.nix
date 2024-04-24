@@ -20,6 +20,14 @@
   programs = {
       zsh = {
         enable = true;
+        enableCompletion = true;
+
+        initExtra = "source /Users/george/.config/op/plugins.sh\n";
+
+        oh-my-zsh = {
+          enable = true;
+          plugins = ["1password" "aws" "battery" "brew" "docker" "docker-compose" "git" "kubectl" "kubectx" "macos"];
+        };
       };
       git = {
         enable = true;
