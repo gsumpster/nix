@@ -41,6 +41,7 @@ in {
       "google-chrome"
       "notion"
       "tableplus"
+      "postman"
       "figma"
       "skype"
       "linear-linear"
