@@ -20,7 +20,7 @@
   };
 
   outputs = inputs: {
-    darwinConfigurations."georges-MacBook-Pro" = inputs.nix-darwin.lib.darwinSystem {
+    darwinConfigurations."Georges-MacBook-Pro" = inputs.nix-darwin.lib.darwinSystem {
       system = "aarch64-darwin";
 
       specialArgs = { inherit inputs; };
