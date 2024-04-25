@@ -46,6 +46,7 @@ in {
       "linear-linear"
       "reverso"
       "firefox"
+      "obsidian"
     ];
     masApps = {
       "1Password for Safari" = 1569813296;
