@@ -50,12 +50,14 @@ in {
       "obsidian"
       "discord"
       "moonlight"
+      "raycast"
     ];
     masApps = {
       "1Password for Safari" = 1569813296;
       "Fantastical" = 975937182;
       "Omnifocus 4" = 1542143627;
       "Handmirror" = 1502839586;
+      "Paprika" = 1303222628;
     };
   };
 

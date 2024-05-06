@@ -124,6 +124,12 @@
             version = "0.4.72";
             sha256 = "sha256-1nUpOXdteWsyFYJ2uATCcr1SUbeusmbpa09Bkw9/TZM=";
           }
+          {
+            name = "angular-console";
+            publisher = "nrwl";
+            version = "18.20.0";
+            sha256 = "sha256-DSu9pjDa62MxrkAJHpDI4jIF2Kjy2n2xK2fE4bqCf4Q=";
+          }
         ];
       };
     };
