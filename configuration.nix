@@ -29,6 +29,7 @@ in {
       "terragrunt"
       "kubergrunt"
       "ory-hydra"
+      "libffi"
     ];
     casks = [
       "1password"

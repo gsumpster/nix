@@ -17,6 +17,7 @@
     awscli
     cachix
     zoom-us
+    aws-vault
   ];
 
   # imports = [inputs._1password-shell-plugins.hmModules.default];
@@ -71,10 +72,12 @@
           esbenp.prettier-vscode
           eamodio.gitlens
           github.vscode-pull-request-github
+          github.vscode-github-actions
           rust-lang.rust-analyzer
           serayuzgur.crates
           graphql.vscode-graphql-syntax
           graphql.vscode-graphql
+          ms-python.python
         ]++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {
             name = "binary-plist";
