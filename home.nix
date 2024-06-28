@@ -116,6 +116,12 @@
             sha256 = "sha256-TxqQzJfynmQkS86jnO6TV8MpRIwlkIPen6MtApT8/Uc=";
           }
           {
+            name = "copilot-chat";
+            publisher = "GitHub";
+            version = "0.16.1";
+            sha256 = "sha256-jk0fi6RPR+fDNV94Hv0963ezOxlQpWXOPYEZSYX24Tw=";
+          }
+          {
             name = "vscode-jest";
             publisher = "orta";
             version = "5.2.3";
