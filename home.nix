@@ -122,6 +122,12 @@
             sha256 = "sha256-jk0fi6RPR+fDNV94Hv0963ezOxlQpWXOPYEZSYX24Tw=";
           }
           {
+              name = "beardedtheme";
+              publisher = "beardedbear";
+              version = "9.1.4";
+              sha256 = "sha256-RL6Yko0ustm/4Ery/JbNOaZUiQgvSbvQvd4SmQf8oWM=";
+          }
+          {
             name = "vscode-jest";
             publisher = "orta";
             version = "5.2.3";

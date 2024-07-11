@@ -52,6 +52,7 @@ in {
       "discord"
       "moonlight"
       "raycast"
+      "hyper"
     ];
     masApps = {
       "1Password for Safari" = 1569813296;
