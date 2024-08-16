@@ -106,8 +106,8 @@
           {
             name = "codespaces";
             publisher = "GitHub";
-            version = "1.16.22";
-            sha256 = "sha256-g9uwAlkJLO7/JqWdnJZ0k66LMFercZuwPbvcLYyGDuA=";
+            version = "1.17.2";
+            sha256 = "sha256-r6ui1uWlAK6dvzMYrOZi6GHaquSM+pDPjw6YIxuO+mA=";
           }
           {
             name = "copilot";
