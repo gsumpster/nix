@@ -32,7 +32,7 @@ in {
       "libffi"
     ];
     casks = [
-      "1password"
+      # "1password" - Assumed to be installed prior to nix configuration for authenticating with iCloud etc.
       "1password-cli"
       "slack"
       "tailscale"
@@ -53,6 +53,8 @@ in {
       "moonlight"
       "raycast"
       "hyper"
+      "jetbrains-toolbox"
+      "jan"
     ];
     masApps = {
       "1Password for Safari" = 1569813296;

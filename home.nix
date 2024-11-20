@@ -5,6 +5,14 @@
 {
   home.stateVersion = "23.11";
 
+  home.file = {
+    ".hyper.js" = {
+      source = ./.hyper.js;
+      target = "${config.home.homeDirectory}/.hyper.js";
+      force = true;
+    };
+  };
+
   home.packages = with pkgs; [
     coreutils
     curl
@@ -73,8 +81,10 @@
           eamodio.gitlens
           github.vscode-pull-request-github
           github.vscode-github-actions
+          github.codespaces
+          github.copilot
+          github.copilot-chat
           rust-lang.rust-analyzer
-          serayuzgur.crates
           graphql.vscode-graphql-syntax
           graphql.vscode-graphql
           ms-python.python
@@ -102,24 +112,6 @@
             publisher = "MS-vsliveshare";
             version = "1.0.5883";
             sha256 = "sha256-BNxLINcbat2F4PHCrKHKIuMpXW1q9aP2SDb0oIv48v0=";
-          }
-          {
-            name = "codespaces";
-            publisher = "GitHub";
-            version = "1.17.2";
-            sha256 = "sha256-r6ui1uWlAK6dvzMYrOZi6GHaquSM+pDPjw6YIxuO+mA=";
-          }
-          {
-            name = "copilot";
-            publisher = "GitHub";
-            version = "1.221.1038";
-            sha256 = "sha256-Plpg+WcgrYdeaWNYyIsUfHYkZQlXwmXVYt379kz8kNw=";
-          }
-          {
-            name = "copilot-chat";
-            publisher = "GitHub";
-            version = "0.16.1";
-            sha256 = "sha256-jk0fi6RPR+fDNV94Hv0963ezOxlQpWXOPYEZSYX24Tw=";
           }
           {
               name = "beardedtheme";
